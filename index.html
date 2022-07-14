@@ -2,24 +2,26 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>智一小锁</title>
- <script src="md5.js"></script>
-<script>
-function displayDate()
-{
-
-var v1= md5('77eb2e623ed1d2625d579615ffcee2a5vtec126','',false); //56b21847ed32d2d96cf74077b22342eb
-document.getElementById("demo").innerHTML=v1;
-}
-</script>
-	
+<title>智一小锁</title>	
 </head>
 <body>
 
-<h1>智一小锁获取注册码</h1>
-<p id="demo">这是一个段落</p>
-First name: <input type="text" name="firstname"><br>
-<button type="button" onclick="displayDate()">显示日期</button>
+电脑端地址: <input type="text" size="40" maxlength="40"   id="addres" value="77eb2e623ed1d2625d579615ffcee2a5vtec126">
+<button type="button" onclick="getLic()">获得LIC</button>
+<p id="demo1">注册码:</p>
+<p id="demo2"></p>
+
+<script src="md5.js"></script>
+<script>
+function getLic()
+{
+//document.getElementById("demo").innerHTML=document.getElementById("addres").value;
+var inpObj =document.getElementById("addres").value;
+//77eb2e623ed1d2625d579615ffcee2a5vtec126   ac09ad643d8f8e0825b8e3ac50d825ba
+var v1= md5(inpObj,'',false); 
+document.getElementById("demo2").innerHTML=v1;
+}
+</script>
 
 </body>
 </html>

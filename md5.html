@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+ <script src="md5.js"></script>
+<script>
+function displayDate()
+{
+
+var v1= md5('77eb2e623ed1d2625d579615ffcee2a5vtec126','',false); //56b21847ed32d2d96cf74077b22342eb
+document.getElementById("demo").innerHTML=v1;
+}
+</script>
+	
+</head>
+<body>
+
+<h1>我的第一个 JavaScript 程序</h1>
+<p id="demo">这是一个段落</p>
+First name: <input type="text" name="firstname"><br>
+<button type="button" onclick="displayDate()">显示日期</button>
+
+</body>
+</html>

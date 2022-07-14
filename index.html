@@ -6,7 +6,7 @@
 </head>
 <body>
 
-电脑端地址: <input type="text" size="40" maxlength="40"   id="addres" value="77eb2e623ed1d2625d579615ffcee2a5vtec126">
+电脑端地址: <input type="text" size="40" maxlength="40"   id="addres" value="77eb2e623ed1d2625d579615ffcee2a5">
 <button type="button" onclick="getLic()">获得LIC</button>
 <p id="demo1">注册码:</p>
 <p id="demo2"></p>
@@ -17,7 +17,7 @@ function getLic()
 {
 //document.getElementById("demo").innerHTML=document.getElementById("addres").value;
 var inpObj =document.getElementById("addres").value;
-//77eb2e623ed1d2625d579615ffcee2a5vtec126   ac09ad643d8f8e0825b8e3ac50d825ba
+//77eb2e623ed1d2625d579615ffcee2a5
 var v1= md5(inpObj,'',false); 
 document.getElementById("demo2").innerHTML=v1;
 }
